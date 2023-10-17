@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container mx-auto">
+        <div class="w-full  flex flex-wrap  mx-auto">
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+            <div class="md:w-1/5 m-4 w-1/2 mb-8  hover:border-red-500 hover:border-2 boxItem"  data-id="checkBox-1">
+                <img src="https://media.fixmybrokenscreen.co.uk/assets/upload/service/images/Cracked_Front_Glass_Repair_(LCD_must_work)_2e798ce2487206f70d332ae733616eb8.webp" alt="">
+                <div class="text-center pt-4">
+                    <a href="" class="text-gray-500 text-sm hover:text-[#6bce04]" >Broken Screen Repair</a>
+                    <p class="font-bold pt-2">$115.00</p>
+                </div>
+                <input class="checkBox-1 checkBox" type="checkbox" value="115.00">
+            </div>
+            
+            
+            
+
+
+            <p class="tong" ></p>
+           
+           
+        
+        </div>
+        <div class="flex justify-end ">
+            <div class="">
+                    <h3 class="font-bold text-lg mb-2">Total Amount: $115.000</h3>
+                    <div class="flex justify-center">
+                        <button class="border-2 bg-red-500 text-white text-base font-light px-14 py-3 rounded-lg">Book Repair</button>
+                    </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            let total = 0;
+            $(".boxItem").click(function(e) {
+                let value =  $(this).attr("data-id");
+             
+                $(`.${value}`, this).prop("checked", function(_, oldProp) {
+                    
+                    let value = $(this).val();
+                    total = total + parseInt(value);
+                     $(".tong").html(total);
+                    return !oldProp ;
+                  
+                });
+                
+                
+        
+            });
+          
+
+                
+      
+            
+          
+           
+
+        });
+    </script>
+</body>
+</html>

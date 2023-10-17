@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
+
+
+
+</head>
+<body>
+  <section>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="slide">
+        <div class="w-3/4 mx-auto">
+          <div class="flex rounded-lg bg-gray-200">
+            <div class="w-1/2">
+              <div class="p-5">
+                <div>
+                  <h1 class="font-black text-3xl">Buổi làm việc của MC và Tập đoàn Nhựa Trường Phát tại Hà Nội</h1>
+                  <p class="text-base pt-6 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quae? Error minima voluptates quaerat aperiam maxime vitae laudantium maiores quidem.  </p>
+                </div>
+                <div class="flex items-center justify-between mt-8">
+                  <div>
+                    <button class=" font-medium text-white text-lg bg-[#ff7f2e] hover:bg-[#fe6c27] px-5 py-2 rounded-3xl border-2 border-[#fedac7]">Xem thêm</button>
+                  </div>
+                  <div class="pr-6">
+                    <button class="w-2.5 h-2.5 bg-[#ff6823] rounded-full"></button>
+                    <button class="w-2.5 h-2.5 bg-[#ffd1bd] rounded-full"></button>
+                    <button class="w-2.5 h-2.5 bg-[#ffd1bd] rounded-full"></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+  
+            <div class="">
+              <div>
+                <img class="rounded-r-lg bg-gray-500" src="/img/img1.jpeg" alt="">
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="w-3/4 mx-auto">
+          <div class="flex rounded-lg bg-gray-200">
+            <div class="w-1/2">
+              <div class="p-5">
+                <div>
+                  <h1 class="font-black text-3xl">Buổi làm việc của MC và Tập đoàn Nhựa Trường Phát tại Hà Nội</h1>
+                  <p class="text-base pt-6 font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quae? Error minima voluptates quaerat aperiam maxime vitae laudantium maiores quidem.  </p>
+                </div>
+                <div class="flex items-center justify-between mt-8">
+                  <div>
+                    <button class=" font-medium text-white text-lg bg-[#ff7f2e] hover:bg-[#fe6c27] px-5 py-2 rounded-3xl border-2 border-[#fedac7]">Xem thêm</button>
+                  </div>
+                  <div class="pr-6">
+                    <button class="w-2.5 h-2.5 bg-[#ff6823] rounded-full"></button>
+                    <button class="w-2.5 h-2.5 bg-[#ffd1bd] rounded-full"></button>
+                    <button class="w-2.5 h-2.5 bg-[#ffd1bd] rounded-full"></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+  
+            <div class="">
+              <div>
+                <img class="rounded-r-lg bg-gray-500" src="/img/img1.jpeg" alt="">
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 512 512" class="phone-icon">
+            <path class="w-8 h-8" d="M392 0H120C53.88 0 0 53.88 0 120v272c0 66.12 53.88 120 120 120h272c66.12 0 120-53.88 120-120V120C512 53.88 458.1 0 392 0zm56 392c0 30.88-25.12 56-56 56H120c-30.88 0-56-25.12-56-56V120c0-30.88 25.12-56 56-56h272c30.88 0 56 25.12 56 56z"/>
+          </svg>
+        </div>
+        <div class="transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 512 512" class="text-gray-700 hover:text-gray-900">
+            <path d="M392 0H120C53.88 0 0 53.88 0 120v272c0 66.12 53.88 120 120 120h272c66.12 0 120-53.88 120-120V120C512 53.88 458.1 0 392 0zm56 392c0 30.88-25.12 56-56 56H120c-30.88 0-56-25.12-56-56V120c0-30.88 25.12-56 56-56h272c30.88 0 56 25.12 56 56z"/>
+          </svg>
+        </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="/script.js"></script> -->
+ 
+  
+  
+  <script>
+    $(document).ready(function(){
+    $('.slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+    });
+  });
+  </script>
+
+</body>
+<footer>
+    <div>
+          <button onClick={scroll} id="scrollButton" class="fixed bottom-[30px]  right-6 p-3 bg-[#EE8265] hover:bg-[#ff6b29] text-white rounded-full focus:outline-none transition ">
+            <svg class="w-6 h-6 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          <button  id="scrollButton" class="fixed bottom-[90px]  right-6 p-3 bg-[#EE8265] hover:bg-[#ff6b29] text-white rounded-full focus:outline-none transition phone-icon transition-transform duration-200 ease-in-out transform hover:animate-shake ">
+          <svg class="w-6 h-6 bi bi-telephone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          </button>
+          <button  id="scrollButton" class="fixed bottom-[150px]  right-6 p-3 bg-[#EE8265] hover:bg-[#ff6b29] text-white rounded-full focus:outline-none transition ">
+          <svg class="w-6 h-6 bi bi-chat-left-dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+          </button>
+          
+        </div>
+</footer>
+
+</html>
